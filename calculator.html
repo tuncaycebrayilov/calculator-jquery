@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">  
+    </script> 
+    </script> 
+</head>
+<body>
+    <div style="text-align: center;">
+        <input style="width: 552px; height: 66px;" type="text" class="calculator-input" disabled />
+    </div>
+     
+    <div class="calculator-keys">
+        <div class="operation">
+            <button type="button" value="+" onclick="insertCharacter('+')" class="operator" >+</button> 
+            <button type="button" value="-" onclick="insertCharacter('-')" class="operator" >-</button>
+            <button type="button" value="×" onclick="insertCharacter('*')" class="operator" >×</button>
+            <button type="button" value="÷" onclick="insertCharacter('/')" class="operator" >÷</button>
+        </div>
+
+        <div class="numbers">
+            <button type="button" value="7" id="seven" onclick="insertCharacter(7)" >7</button>
+            <button type="button" value="8" id="eight" onclick="insertCharacter(8)" >8</button>
+            <button type="button" value="9" id="nine"  onclick="insertCharacter(9)" >9</button>
+        </div>
+
+        <div class="numbers">
+            <button type="button" value="4" id="four" onclick="insertCharacter(4)" >4</button>
+            <button type="button" value="5" id="five" onclick="insertCharacter(5)" >5</button>
+            <button type="button" value="6" id="six"  onclick="insertCharacter(6)" >6</button>
+        </div>
+
+        <div class="numbers">
+            <button type="button" value="3" id="three" onclick="insertCharacter(3)" >3</button>
+            <button type="button" value="2" id="two"   onclick="insertCharacter(2)" >2</button>
+            <button type="button" value="1" id="one"   onclick="insertCharacter(1)" >1</button>
+        </div>
+
+        <div class="numbers">
+            <button type="button" value="0" onclick="insertCharacter(0)" id="zero" >0</button>
+            <button type="button" value="." onclick="insertCharacter('.')" class="Decimal" >.</button>
+            <button type="button" value="C" onclick="clearInput()" id="clear" class="clear">C</button>
+        </div>
+
+        <div class="equal2">
+            <button rowspan=2 type="button" value="=" onclick="result()" id="equal1">=</button>
+        </div>
+    </div>
+
+
+
+    <script src="./calculator.js"></script>
+</body>
+</html>
